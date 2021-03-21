@@ -11,9 +11,10 @@ class Home extends Component {
   render() {
     return (
       <motion.div
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        exit={{ opacity: 0 }}
+        // initial={{ scaleY: 0 }}
+        animate={{ scaleY: 1 }}
+        exit={{ x: "-100vw", transition: { ease: "easeInOut" } }}
+        transition={{ duration: 0.5 }}
       >
         <div className="homeWrapper">
           <div className="heroBackground"></div>
@@ -24,10 +25,14 @@ class Home extends Component {
               alt=""
             />
           </div>
+          <h3 className="checkOut">Check out our Sortiments!</h3>
           <Link to="/allbeer" className="allbeerBtn">
-            All Beer
+            {`>> To Beerlist`}
           </Link>
-
+          {/* <h3 className="checkOut">Cant decide? Here's beer of the week</h3>
+          <Link to={`/allbeer/beer/ `} className="beerWeekBtn">
+            {`>> Beer of Week`}
+          </Link> */}
           <Carousel />
         </div>
       </motion.div>

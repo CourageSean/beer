@@ -8,9 +8,11 @@ function BeerItem(props) {
         <div className="carouselImg-wrapper">
           <img src={props.img} alt="" />
         </div>
-        <h4>{props.name}</h4>
-        <p>{props.tagline} </p>
-        <p>{props.contribute} </p>
+        <div className="test1">
+          <h4>{props.name}</h4>
+          <p>{props.tagline} </p>
+          <p>{props.contribute} </p>
+        </div>
       </Link>
     </div>
   );

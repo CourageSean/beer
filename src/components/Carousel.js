@@ -12,6 +12,8 @@ export default class SimpleSlider extends Component {
       beerList2: [],
       beerList3: [],
       beerList4: [],
+      j: "",
+      link: "",
     };
   }
 
@@ -46,8 +48,14 @@ export default class SimpleSlider extends Component {
       autoplay: true,
       autoplaySpeed: 3000,
     };
+
     return (
       <div className="carousel-bg">
+        <h3 className="checkOut1">Cant decide? Here's our beer of the week!</h3>
+        <Link
+          to="/Random"
+          className="beerWeekBtn"
+        >{`>> Beer of the Week`}</Link>
         <Slider {...settings}>
           <div>
             <div className="carouselItem">

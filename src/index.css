@@ -1,3 +1,9 @@
+@font-face {
+  font-family: "Hemerali";
+  src: local("Hemerali"),
+    url("./fonts/HemeraIiDemoRegular-ZY73.ttf") format("truetype");
+}
+
 body {
   padding: 0;
   margin: 0;
